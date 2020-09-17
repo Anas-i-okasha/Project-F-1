@@ -1,0 +1,131 @@
+body{
+    margin: 0;
+    font-family: system-ui;
+}
+.di{
+    background-image: url('images.jpg');
+    height: max-content;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.page-title{
+    background: rgba(0,0,0,0.5);
+    text-align: center;
+    color: white;
+    padding: 50px;
+    font-variant: small-caps;
+    font-size: 100px;
+    font-family: fantasy;
+    letter-spacing: 20px;
+
+}
+.st{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.manu{
+    background: #184d47;
+    text-align: center;
+}
+.manu-ul{
+    margin: 0;
+    padding: 0;
+    display: inline;
+}
+.manu-ul li{
+    font-size: 17px;
+    list-style: none;
+    display: inline-block;
+    padding: 25px 25px 26px 25px;
+}
+.manu-a{
+    text-decoration: none;
+    color: white;
+}
+.manu-ul li:hover{
+    background: #5b8c5a;
+    transform:scale(1.1);
+}
+.search-bar{
+    border:1px solid white;
+    border-radius: 50px;
+    background: white;
+    width:max-content;
+    display: inline-block;
+    margin: 8px;
+}
+.search-input{
+    width: 250px;
+    border: none;
+    font-size: 16px;
+    outline: none;
+    background: transparent;
+    margin: 15px 0px 0px 10px;
+}
+i{
+    font-size: 20px;
+}
+button{
+    background: transparent;
+    border: none;
+    outline: none;
+}
+.containar ,.deals-containar {
+    margin: 50px 50px 50px 5%;
+    width: 90%;
+    text-align: center;
+}
+.categories{
+    width: max-content;
+    margin: 25px;
+    border: 1px solid #184d47;
+    border-radius: 0 0 50px 50px;
+    display: inline-block;
+}
+.categories :hover{
+    box-shadow: 0 0 10px 3px #184d47;
+}
+.item-image{
+    height: 150px;
+    width: 150px;
+    border-radius: 0 0 50px 50px;
+    padding: 10px;
+}
+.image-title{
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+}
+a{
+    text-decoration: none;
+}
+.title{
+    padding: 50px;
+    font-size: 50px;
+    font-weight: bold;
+    letter-spacing: 10px;
+    color: white;
+    background: rgba (0,0,0,0.5);
+}
+.deal{
+    padding: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    display: inline-block;
+    max-width: 20%;
+    background: linear-gradient(120deg,#16817a 20%,#cee397 50% , #16817a 80%);
+}
+.coupen-btn{
+    border: 1px solid white;
+    color: white;
+    margin: 10px;
+    padding: 10px;
+     border-radius: 20px;
+}
+.coupen-btn :hover{
+    box-shadow: 0 0 10px 5px inset;
+}

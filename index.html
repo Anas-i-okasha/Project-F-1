@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="di">
+        <div class="page-title">Eat Fresh</div>
+    </div>
+    <div class="manu" id="st">
+        <ul class="manu-ul">
+            <a href="#" class="manu-a"><li>Home</li></a>
+            <a href="#Deals" class="manu-a"><li>Deals</li></a>
+            <a href="#vegetables" class="manu-a"><li>Vegatables</li></a>
+            <a href="#Fruit" class="manu-a"><li>fruit</li></a>
+            <a href="#Meat" class="manu-a"><li>meat</li></a>
+            <a href="#" class="manu-a"><li>cart</li></a>
+        </ul>
+        <div class="search-bar">
+            <form>
+                <input type="text" placeholder="search...." name="search" class="search-input">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+    </div>
+    
+     <!--home begins-->
+     <div class="containar">
+         <a href="vegetables">
+             <div class="categories">
+                <img src="vega.jpg".class="item-image"/>
+                <div class="image-title">vegetables</div>
+             </div>
+         </a>
+         <a href="Fruit">
+            <div class="categories">
+               <img src="frauit.jpg".class="item-image"/>
+               <div class="image-title">Fruit</div>
+            </div>
+         </a>
+            <a href="Meat">
+                <div class="categories">
+                   <img src="meat.jpg".class="item-image"/>
+                   <div class="image-title">meat</div>
+                </div>
+            </a>
+            <a href="Deals">
+                <div class="categories">
+                   <img src="vega.jpg".class="item-image"/>
+                   <div class="image-title">Deals</div>
+                </div>
+            </a> 
+     </div>
+    <!--Deals begin-->
+    <div class="deals-containar" id="deals">
+        <div class="parallex">
+            <div class="title">Deals</div>
+        </div>
+        <div class="deal">
+            save 20% on min-purchese of 110JD on vegetables<br/>
+            <button class="coupen-btn">Add coponue</button>
+
+        </div>
+        <div class="deal">
+            save 15% on min-purchese of 75JD on Fruit<br/>
+            <button class="coupen-btn">Add coponue</button>
+
+        </div>
+        <div class="deal">
+            save 7% on min-purchese of 50JD on Meat<br/>
+            <button class="coupen-btn">Add coponue</button>
+
+        </div>
+
+
+    </div>
+    <!--Deals End-->
+    <!--veg begin-->
+    <div class="deals-container" id="vegetables">
+        <div class="parllex">
+            <div class="title">Vegatables </div>
+        </div>
+        <div class="item">
+            <div class="image">
+                <img src="okar.jpg" class="item-image-size" >
+            </div>
+            <div class="description">
+                <b>organic okar</b><br/>
+                <div class="item-select">
+                    price: 0.35JD/Kg
+                </div>
+                <label>Qty:</label>
+                <select class="item-select">
+                    <option>250 gr</option>
+                    <option>500 gr</option>
+                    <option>750 gr</option>
+                    <option>1000 gr</option>
+                </select><br/>
+                <button class="buyNow-btn">Buy Now</button>
+
+            </div>
+        </div>
+
+    </div>
+    <!--veg End-->
+    <!--home Ends-->
+    <script src="practice.js"></script>
+</body>
+</html>
