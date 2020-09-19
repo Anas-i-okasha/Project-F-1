@@ -4,108 +4,424 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <title>FreshCO online</title>
 </head>
 <body>
-    <div class="di">
+    <div class="parallel">
         <div class="page-title">Eat Fresh</div>
     </div>
-    <div class="manu" id="st">
-        <ul class="manu-ul">
-            <a href="#" class="manu-a"><li>Home</li></a>
-            <a href="#Deals" class="manu-a"><li>Deals</li></a>
-            <a href="#vegetables" class="manu-a"><li>Vegatables</li></a>
-            <a href="#Fruit" class="manu-a"><li>fruit</li></a>
-            <a href="#Meat" class="manu-a"><li>meat</li></a>
-            <a href="#" class="manu-a"><li>cart</li></a>
+    <div class="menu" id="sticky">
+        <ul class="menu-ul">
+            <a href="#" class="a-menu"><li>Home</li></a>
+            <a href="#Deals" class="a-menu"><li>Deals</li></a>
+            <a href="#vegetables" class="a-menu"><li>Vegetables</li></a>
+            <a href="#Fruits" class="a-menu"><li>Fruits</li></a>
+            <a href="#Meats" class="a-menu"><li>Meats</li></a>
+            <a href="#" class="a-menu"><li>Cart</li></a>
         </ul>
-        <div class="search-bar">
-            <form>
-                <input type="text" placeholder="search...." name="search" class="search-input">
-                <button type="submit"><i class="fa fa-search"></i></button>
+        <div class="search-box">
+            <form> <input type="text" placeholder="search..." name="search" class="search-input"/>
+            
             </form>
         </div>
     </div>
-    
-     <!--home begins-->
-     <div class="containar">
-         <a href="vegetables">
-             <div class="categories">
-                <img src="vega.jpg".class="item-image"/>
-                <div class="image-title">vegetables</div>
-             </div>
-         </a>
-         <a href="Fruit">
-            <div class="categories">
-               <img src="frauit.jpg".class="item-image"/>
-               <div class="image-title">Fruit</div>
-            </div>
-         </a>
-            <a href="Meat">
-                <div class="categories">
-                   <img src="meat.jpg".class="item-image"/>
-                   <div class="image-title">meat</div>
+    <!-- home page begin-->
+          <div class="container">
+              <a href="#vegetables">
+                  <div class="categories">
+                      <img src="/JCA/images/okar.jpg" class="item-image">
+                      <div class="image-title">Vegetables</div>
                 </div>
+              </a>
+              <a href="#Fruits">
+                <div class="categories">
+                    <img src="/JCA/images/frauit.jpg" class="item-image">
+                    <div class="image-title">Fruits</div>
+              </div>
             </a>
-            <a href="Deals">
+            <a href="#Deals">
                 <div class="categories">
-                   <img src="vega.jpg".class="item-image"/>
-                   <div class="image-title">Deals</div>
-                </div>
-            </a> 
-     </div>
-    <!--Deals begin-->
-    <div class="deals-containar" id="deals">
-        <div class="parallex">
-            <div class="title">Deals</div>
-        </div>
-        <div class="deal">
-            save 20% on min-purchese of 110JD on vegetables<br/>
-            <button class="coupen-btn">Add coponue</button>
-
-        </div>
-        <div class="deal">
-            save 15% on min-purchese of 75JD on Fruit<br/>
-            <button class="coupen-btn">Add coponue</button>
-
-        </div>
-        <div class="deal">
-            save 7% on min-purchese of 50JD on Meat<br/>
-            <button class="coupen-btn">Add coponue</button>
-
-        </div>
-
-
-    </div>
-    <!--Deals End-->
-    <!--veg begin-->
-    <div class="deals-container" id="vegetables">
-        <div class="parllex">
-            <div class="title">Vegatables </div>
-        </div>
-        <div class="item">
-            <div class="image">
-                <img src="okar.jpg" class="item-image-size" >
+                    <img src="/JCA/images/deal.jpg" class="item-image">
+                    <div class="image-title">Deals</div>
+              </div>
+            </a>
+            <a href="#Meats">
+                <div class="categories">
+                    <img src="/JCA/images/meat.jpg" class="item-image">
+                    <div class="image-title">Meats</div>
+              </div>
+            </a>
+          </div>
+          <!--deal begin-->
+          <div class="deal-container" id="deal">
+              <div class="parallel">
+                  <div class="title">Deals</div>
+              </div>
+              <div class="deal">
+                  save 20% on min-purchase of 50JD on Vegetables<br/>
+                  <button class="coupon-bon">Add coupon</button>
+              </div>
+              <div class="deal">
+                save 12% on min-purchase of 25JD on Fruits<br/>
+                <button class="coupon-bon">Add coupon</button>
             </div>
-            <div class="description">
-                <b>organic okar</b><br/>
-                <div class="item-select">
-                    price: 0.35JD/Kg
+            <div class="deal">
+                save 15% on min-purchase of 35JD on Meats<br/>
+                <button class="coupon-bon">Add coupon</button>
+            </div>
+          </div>
+          <!--deal end-->
+          <!--veg begin-->
+          <div class="deal-container" id="vegetables">
+              <div class="parallel">
+                  <div class="title">Vegetables</div>
+              </div>
+              <div class="items">
+                  <div class="images">
+                      <img src="/JCA/images/okar.jpg" class="item-image-size">
+                  </div>
+                  <div class="description"> <b>Organic Cucumber</b><br/>
+                    <div class="item-select"> price:0.35JD/Kg </div>
+                    <label >Qty:</label>
+                    <select class="item-select">
+                        <option >250 grams</option>
+                        <option >500 grams</option>
+                        <option >750 grams</option>
+                        <option >1000 grams</option>
+                    </select><br/>
+                    <button class="buynow-bt">Buy now</button>
                 </div>
-                <label>Qty:</label>
+              </div>
+              <div class="items">
+                <div class="images">
+                    <img src="/JCA/images/tom.jpg" class="item-image-size">
+                </div>
+                <div class="description"> <b>Organic Tomato</b><br/>
+                  <div class="item-select"> price:0.25JD/Kg </div>
+                  <label >Qty:</label>
+                  <select class="item-select">
+                      <option >250 grams</option>
+                      <option >500 grams</option>
+                      <option >750 grams</option>
+                      <option >1000 grams</option>
+                  </select><br/>
+                  <button class="buynow-bt">Buy now</button>
+              </div>
+            </div>
+            <div class="items">
+                <div class="images">
+                    <img src="/JCA/images/pap.jpg" class="item-image-size">
+                </div>
+                <div class="description"> <b>Organic Capsicum</b><br/>
+                  <div class="item-select"> price:0.49JD/Kg </div>
+                  <label >Qty:</label>
+                  <select class="item-select">
+                      <option >250 grams</option>
+                      <option >500 grams</option>
+                      <option >750 grams</option>
+                      <option >1000 grams</option>
+                  </select><br/>
+                  <button class="buynow-bt">Buy now</button>
+              </div>
+            </div>
+            <div class="items">
+                <div class="images">
+                    <img src="/JCA/images/gen.jpg" class="item-image-size">
+                </div>
+                <div class="description"> <b>Organic Garlic</b><br/>
+                  <div class="item-select"> price:0.79JD/Kg </div>
+                  <label >Qty:</label>
+                  <select class="item-select">
+                      <option >250 grams</option>
+                      <option >500 grams</option>
+                      <option >750 grams</option>
+                      <option >1000 grams</option>
+                  </select><br/>
+                  <button class="buynow-bt">Buy now</button>
+              </div>
+            </div>
+            <div class="items">
+                <div class="images">
+                    <img src="/JCA/images/onion.jpg" class="item-image-size">
+                </div>
+                <div class="description"> <b>Organic onion</b><br/>
+                  <div class="item-select"> price:0.1.05JD/Kg </div>
+                  <label >Qty:</label>
+                  <select class="item-select">
+                      <option >250 grams</option>
+                      <option >500 grams</option>
+                      <option >750 grams</option>
+                      <option >1000 grams</option>
+                  </select><br/>
+                  <button class="buynow-bt">Buy now</button>
+              </div>
+            </div>
+            <div class="items">
+                <div class="images">
+                    <img src="/JCA/images/caru.jpg" class="item-image-size">
+                </div>
+                <div class="description"> <b>Organic Carrots</b><br/>
+                  <div class="item-select"> price:1.25JD/Kg </div>
+                  <label >Qty:</label>
+                  <select class="item-select">
+                      <option >250 grams</option>
+                      <option >500 grams</option>
+                      <option >750 grams</option>
+                      <option >1000 grams</option>
+                  </select><br/>
+                  <button class="buynow-bt">Buy now</button>
+              </div>
+            </div>
+
+          </div>
+          <!--veg ends-->
+          <!--Fru begin-->
+          <div class="deal-container" id="frauits">
+            <div class="parallel">
+                <div class="title">Fruits</div>
+            </div>
+            <div class="items">
+                <div class="images">
+                    <img src="/JCA/images/ban.jpg" class="item-image-size">
+                </div>
+                <div class="description"> <b>Fresh banana</b><br/>
+                  <div class="item-select"> price:0.89JD/Kg </div>
+                  <label >Qty:</label>
+                  <select class="item-select">
+                      <option >250 grams</option>
+                      <option >500 grams</option>
+                      <option >750 grams</option>
+                      <option >1000 grams</option>
+                  </select><br/>
+                  <button class="buynow-bt">Buy now</button>
+              </div>
+            </div>
+            <div class="items">
+              <div class="images">
+                  <img src="/JCA/images/app.jpg" class="item-image-size">
+              </div>
+              <div class="description"> <b>Fresh Apple</b><br/>
+                <div class="item-select"> price:0.99JD/Kg </div>
+                <label >Qty:</label>
                 <select class="item-select">
-                    <option>250 gr</option>
-                    <option>500 gr</option>
-                    <option>750 gr</option>
-                    <option>1000 gr</option>
+                    <option >250 grams</option>
+                    <option >500 grams</option>
+                    <option >750 grams</option>
+                    <option >1000 grams</option>
                 </select><br/>
-                <button class="buyNow-btn">Buy Now</button>
+                <button class="buynow-bt">Buy now</button>
+            </div>
+          </div>
+          <div class="items">
+              <div class="images">
+                  <img src="/JCA/images/cherries.jpg" class="item-image-size">
+              </div>
+              <div class="description"> <b>Fresh Cherries</b><br/>
+                <div class="item-select"> price:2.05JD/Kg </div>
+                <label >Qty:</label>
+                <select class="item-select">
+                    <option >250 grams</option>
+                    <option >500 grams</option>
+                    <option >750 grams</option>
+                    <option >1000 grams</option>
+                </select><br/>
+                <button class="buynow-bt">Buy now</button>
+            </div>
+          </div>
+          <div class="items">
+              <div class="images">
+                  <img src="/JCA/images/grap.jpg" class="item-image-size">
+              </div>
+              <div class="description"> <b>Fresh Grap</b><br/>
+                <div class="item-select"> price:1.05JD/Kg </div>
+                <label >Qty:</label>
+                <select class="item-select">
+                    <option >250 grams</option>
+                    <option >500 grams</option>
+                    <option >750 grams</option>
+                    <option >1000 grams</option>
+                </select><br/>
+                <button class="buynow-bt">Buy now</button>
+            </div>
+          </div>
+          <div class="items">
+              <div class="images">
+                  <img src="/JCA/images/wm.jpg" class="item-image-size">
+              </div>
+              <div class="description"> <b>Fresh watermelon</b><br/>
+                <div class="item-select"> price:1.39JD/Kg </div>
+                <label >Qty:</label>
+                <select class="item-select">
+                    <option >250 grams</option>
+                    <option >500 grams</option>
+                    <option >750 grams</option>
+                    <option >1000 grams</option>
+                </select><br/>
+                <button class="buynow-bt">Buy now</button>
+            </div>
+          </div>
+          <div class="items">
+              <div class="images">
+                  <img src="/JCA/images/str.jpg" class="item-image-size">
+              </div>
+              <div class="description"> <b>Fresh Strawberries </b><br/>
+                <div class="item-select"> price:0.69JD/Kg </div>
+                <label >Qty:</label>
+                <select class="item-select">
+                    <option >250 grams</option>
+                    <option >500 grams</option>
+                    <option >750 grams</option>
+                    <option >1000 grams</option>
+                </select><br/>
+                <button class="buynow-bt">Buy now</button>
+            </div>
+          </div>
 
+        </div>
+        <!--Fru ends-->
+        <!--Meat begin-->
+        <div class="deal-container" id="meats">
+            <div class="parallel">
+                <div class="title">Meat</div>
+            </div>
+            <div class="items">
+                <div class="images">
+                    <img src="/JCA/images/Fme.jpg" class="item-image-size">
+                </div>
+                <div class="description"> <b>Fresh chicken</b><br/>
+                  <div class="item-select"> price:1.39JD/Kg </div>
+                  <label >Qty:</label>
+                  <select class="item-select">
+                      <option >250 grams</option>
+                      <option >500 grams</option>
+                      <option >750 grams</option>
+                      <option >1000 grams</option>
+                      <option >2000 grams</option>
+                  </select><br/>
+                  <button class="buynow-bt">Buy now</button>
+              </div>
+            </div>
+            <div class="items">
+              <div class="images">
+                  <img src="/JCA/images/frozen.jpg" class="item-image-size">
+              </div>
+              <div class="description"> <b>Frozen chicken</b><br/>
+                <div class="item-select"> price:1.15JD/Kg </div>
+                <label >Qty:</label>
+                <select class="item-select">
+                    <option >250 grams</option>
+                    <option >500 grams</option>
+                    <option >750 grams</option>
+                    <option >1000 grams</option>
+                    <option >2000 grams</option>
+                </select><br/>
+                <button class="buynow-bt">Buy now</button>
+            </div>
+          </div>
+          <div class="items">
+              <div class="images">
+                  <img src="/JCA/images/local.jpg" class="item-image-size">
+              </div>
+              <div class="description"> <b>Local Meat</b><br/>
+                <div class="item-select"> price:5.99JD/Kg </div>
+                <label >Qty:</label>
+                <select class="item-select">
+                    <option >500 grams</option>
+                    <option >1000 grams</option>
+                    <option >2000 grams</option>
+                    <option >2500 grams</option>
+                    <option >3000 grams</option>
+                </select><br/>
+                <button class="buynow-bt">Buy now</button>
+            </div>
+          </div>
+          <div class="items">
+              <div class="images">
+                  <img src="/JCA/images/romeat.jpg" class="item-image-size">
+              </div>
+              <div class="description"> <b>Imported Meat</b><br/>
+                <div class="item-select"> price:4.39JD/Kg </div>
+                <label >Qty:</label>
+                <select class="item-select">
+                    <option >1500 grams</option>
+                    <option >2000 grams</option>
+                    <option >2500 grams</option>
+                    <option >3000 grams</option>
+                    <option >4000 grams</option>
+                </select><br/>
+                <button class="buynow-bt">Buy now</button>
+            </div>
+          </div>
+          <div class="items">
+              <div class="images">
+                  <img src="/JCA/images/salmonf.jpg" class="item-image-size">
+              </div>
+              <div class="description"> <b>Fresh Salmon</b><br/>
+                <div class="item-select"> price:7.99JD/Kg </div>
+                <label >Qty:</label>
+                <select class="item-select">
+                    <option >1000 grams</option>
+                    <option >1500 grams</option>
+                    <option >2000 grams</option>
+                    <option >3000 grams</option>
+                    <option >4000 grams</option>
+                </select><br/>
+                <button class="buynow-bt">Buy now</button>
+            </div>
+          </div>
+          <div class="items">
+              <div class="images">
+                  <img src="/JCA/images/jam.jpg" class="item-image-size">
+              </div>
+              <div class="description"> <b>Fresh Shrimp </b><br/>
+                <div class="item-select"> price:9.99JD/Kg </div>
+                <label >Qty:</label>
+                <select class="item-select">
+                    <option >500 grams</option>
+                    <option >750 grams</option>
+                    <option >1000 grams</option>
+                    <option >2000 grams</option>
+                    <option >3000 grams</option>
+                </select><br/>
+                <button class="buynow-bt">Buy now</button>
+            </div>
+          </div>
+
+        </div>
+        <!--meat ends-->
+    <!-- home page ends-->
+    <!--footer start-->
+    <div class="parallel1">
+        <div class="footer">
+            <div class="quick-link">
+                <div>Location</div>
+                <ul>
+                    <li><a href="" class="a-link">Address 1</a></li>
+                    <li><a href="" class="a-link">Address 2</a></li>
+                    <li><a href="" class="a-link">Address 3</a></li>
+                </ul>
+            </div>
+            <div class="quick-link">
+                <div>Quick Links</div>
+                <ul>
+                    <li><a href="" class="a-link">Contact us</a></li>
+                    <li><a href="" class="a-link">FAQ</a></li>
+                    <li><a href="" class="a-link">Address 3</a></li>
+                </ul>
+            </div>
+            <div class="quick-link">
+                <div>Career</div>
+                <ul>
+                    <li><a href="" class="a-link">Staff</a></li>
+                    <li><a href="" class="a-link">Delivary Staff</a></li>
+                    <li><a href="" class="a-link">shilf</a></li>
+                </ul>
             </div>
         </div>
-
     </div>
-    <!--veg End-->
-    <!--home Ends-->
-    <script src="practice.js"></script>
+    <div class="copyRights">
+        <i class="far fa-copy-right fa-lx"></i>@2020 By Anas okasha JCA
+    </div>
+    <!--footer ends-->
 </body>
 </html>

@@ -2,8 +2,8 @@ body{
     margin: 0;
     font-family: system-ui;
 }
-.di{
-    background-image: url('images.jpg');
+.parallel,.parallel1{
+    background-image: url('/JCA/images/backround.jpg');
     height: max-content;
     background-attachment: fixed;
     background-position: center;
@@ -19,43 +19,47 @@ body{
     font-size: 100px;
     font-family: fantasy;
     letter-spacing: 20px;
-
 }
-.st{
+.sticky{
     position: fixed;
     top: 0;
     width: 100%;
 }
-.manu{
+.menu{
     background: #184d47;
     text-align: center;
 }
-.manu-ul{
+.menu-ul{
     margin: 0;
     padding: 0;
     display: inline;
 }
-.manu-ul li{
+.menu-ul li{
     font-size: 17px;
     list-style: none;
     display: inline-block;
     padding: 25px 25px 26px 25px;
 }
-.manu-a{
+.a-menu, .a-link{
     text-decoration: none;
     color: white;
 }
-.manu-ul li:hover{
+.menu-ul li:hover{
     background: #5b8c5a;
-    transform:scale(1.1);
+    transform: scale(1.1);
 }
-.search-bar{
-    border:1px solid white;
+.search-box{
+    border: 1px solid white;
     border-radius: 50px;
     background: white;
-    width:max-content;
+    width: max-content;
     display: inline-block;
     margin: 8px;
+
+}
+.search-box:hover{
+    box-shadow: 0 0 10px 2px #5b8c5a ;
+    border:1px solid #5b8c5a;
 }
 .search-input{
     width: 250px;
@@ -63,34 +67,27 @@ body{
     font-size: 16px;
     outline: none;
     background: transparent;
-    margin: 15px 0px 0px 10px;
+    margin: 15px 0 0 10px;
 }
-i{
-    font-size: 20px;
-}
-button{
-    background: transparent;
-    border: none;
-    outline: none;
-}
-.containar ,.deals-containar {
+.container, .deal-container{
     margin: 50px 50px 50px 5%;
     width: 90%;
     text-align: center;
 }
-.categories{
+.categories, .items{
     width: max-content;
     margin: 25px;
     border: 1px solid #184d47;
     border-radius: 0 0 50px 50px;
     display: inline-block;
 }
-.categories :hover{
+.categories:hover, .items:hover{
     box-shadow: 0 0 10px 3px #184d47;
+
 }
 .item-image{
-    height: 150px;
-    width: 150px;
+    height: 200px;
+    width: 200px;
     border-radius: 0 0 50px 50px;
     padding: 10px;
 }
@@ -108,7 +105,8 @@ a{
     font-weight: bold;
     letter-spacing: 10px;
     color: white;
-    background: rgba (0,0,0,0.5);
+    background: rgba(0,0,0,0.5);
+
 }
 .deal{
     padding: 50px;
@@ -116,16 +114,79 @@ a{
     font-weight: bold;
     color: white;
     display: inline-block;
+    margin: 20px;
     max-width: 20%;
-    background: linear-gradient(120deg,#16817a 20%,#cee397 50% , #16817a 80%);
+    background: linear-gradient(120deg,#16817a 20%,#cee397 50%,#16817a 80%);
 }
-.coupen-btn{
+.coupon-bon{
     border: 1px solid white;
-    color: white;
+    color:black;
     margin: 10px;
     padding: 10px;
-     border-radius: 20px;
+    border-radius: 20px;
 }
-.coupen-btn :hover{
-    box-shadow: 0 0 10px 5px inset;
+.coupon-bon:hover{
+    box-shadow: 0 0 10 5px white inset;
+}
+.images{
+    display: inline-block;
+}
+.item-image-size{
+    height: 200px;
+    width: 300px;
+    padding: 5px;
+}
+.description{
+    margin: 20px;
+    min-height: 100px;
+}
+.item-select{
+    margin: 10px 0 0 0;
+}
+.buynow-bt{
+    border: 1px solid #184d47;
+    background: #184d47;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: white;
+}
+.buynow-bt:hover{
+    border: 1px solid #5b8c5a;
+    box-shadow: 0 0 10px 5px #5b8c5a inset;
+}
+.parallel1{
+    background-image: url('/JCA/images/footer.jpg');
+
+}
+.footer{
+    background: rgba(0,0,0,0.5);
+    text-align: center;
+    padding: 20px;
+}
+.quick-link{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    display: inline-block;
+    min-width: 30%;
+}
+.quick-link ul{
+    padding: 0;
+
+}
+.quick-link li{
+    list-style: none;
+    padding: 10px;
+    font-weight:300;
+}
+.a-link:hover{
+    color: #fd5e53;
+}
+.copyRights{
+    font-size: 16px;
+    font-family: verdana,arial,helvetica,sans-serif;
+    text-align: center;
+    margin: 15px;
 }
